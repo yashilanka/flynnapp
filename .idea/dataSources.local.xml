@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails dokku: development" uuid="e2fccf91-b78a-47a1-9af0-0c6314720605">
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Rails dokku: production" uuid="806e555a-b02c-4ad0-af7e-6afa611c3194">
+      <user-name>&lt;%= ENV['DB_USER'] %&gt;</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfeedfe8dff5dffadfebdff9dff9df8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
