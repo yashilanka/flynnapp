@@ -22,9 +22,11 @@ test:
 
 production:
   adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %> #This is the environment variable created by our Dokku command earlier
+  url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
   database: <%= ENV['DB_NAME'] %>
-  host: localhost
+  host: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
   port: <%= ENV['DB_PORT'] %>
   encoding: unicode
   pool: 5

@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "dokku": {
-      "postdeploy": "rake db:migrate"
+      "postdeploy": "RAILS_ENV=production rake db:migrate"
     }
   }
 }
