@@ -5,8 +5,8 @@ gem 'rails', '~> 5.0.0'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'therubyracer', platforms: :ruby
+# gem 'coffee-rails', '~> 4.2'
+# gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'friendly_id', '~> 5.1.0'
 gem 'turbolinks', '~> 5'
@@ -33,4 +33,4 @@ gem 'rails_12factor', group: :production #rails library tuned to run smoothly on
 gem 'pg' #postgres gem
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
