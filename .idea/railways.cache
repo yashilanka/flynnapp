@@ -1,0 +1,18 @@
+       Prefix Verb   URI Pattern                    Controller#Action
+         root GET    /                              posts#index
+   categories GET    /categories(.:format)          categories#index
+              POST   /categories(.:format)          categories#create
+ new_category GET    /categories/new(.:format)      categories#new
+edit_category GET    /categories/:id/edit(.:format) categories#edit
+     category GET    /categories/:id(.:format)      categories#show
+              PATCH  /categories/:id(.:format)      categories#update
+              PUT    /categories/:id(.:format)      categories#update
+              DELETE /categories/:id(.:format)      categories#destroy
+        posts GET    /posts(.:format)               posts#index
+              POST   /posts(.:format)               posts#create
+     new_post GET    /posts/new(.:format)           posts#new
+    edit_post GET    /posts/:id/edit(.:format)      posts#edit
+         post GET    /posts/:id(.:format)           posts#show
+              PATCH  /posts/:id(.:format)           posts#update
+              PUT    /posts/:id(.:format)           posts#update
+              DELETE /posts/:id(.:format)           posts#destroy
