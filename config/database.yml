@@ -20,23 +20,23 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-# production:
-#   adapter: postgresql
-#   url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
-#   database: <%= ENV['DB_NAME'] %>
-#   host: <%= ENV['DB_NAME'] %>
-#   username: <%= ENV['DB_USER'] %>
-#   password: <%= ENV['DB_PASS'] %>
-#   port: <%= ENV['DB_PORT'] %>
-#   encoding: unicode
-#   pool: 5
+production:
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %> #This is the environment variable created by our Dokku command earlier
+  database: <%= ENV['DB_NAME'] %>
+  host: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
+  port: <%= ENV['DB_PORT'] %>
+  encoding: unicode
+  pool: 5
 
-  production:
-    adapter: postgresql
-    url: <%= ENV['DATABASE_URL'] %> #This is the environment variable created by our Dokku command earlier
-    database: <%= ENV['PGDATABASE'] %>
-    host: <%= ENV['PGHOST'] %>
-    username: <%= ENV['PGUSER'] %>
-    password: <%= ENV['PGPASSWORD'] %>
-    encoding: unicode
-    pool: 5
+  # production:
+  #   adapter: postgresql
+  #   url: <%= ENV['DATABASE_URL'] %> #This is the environment variable created by our Dokku command earlier
+  #   database: <%= ENV['PGDATABASE'] %>
+  #   host: <%= ENV['PGHOST'] %>
+  #   username: <%= ENV['PGUSER'] %>
+  #   password: <%= ENV['PGPASSWORD'] %>
+  #   encoding: unicode
+  #   pool: 5
